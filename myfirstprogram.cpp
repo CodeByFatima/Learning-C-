@@ -82,12 +82,233 @@
 // }
 
 // Challenge: Print Name and Age
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+//    cout << "fatima\n";
+//    cout << 17;
+//   return 0;
+// }
+
+// Variables
+// #include <iostream>
+// using namespace std;
+// int main()
+// {
+// int myNum = 5;            // Integer (whole number without decimals)
+// double myFloatNum = 5.99; // Floating point number (with decimals)
+// char myLetter = 'D';      // Character
+// string myText = "Hello";  // String (text)
+// bool myBoolean = true;    // Boolean (true or false)
+
+// // First and stupid way
+// cout << myNum << endl;
+// cout << myFloatNum << endl;
+// cout << myLetter << endl;
+// cout << myText << endl;
+// cout << myBoolean << endl;
+
+// // Second way
+// cout << myNum << myFloatNum << myLetter << myText << myBoolean << endl;
+
+// // My sentence w age
+// int myAge = 17;
+// cout << "I am " << myAge << " years old.";
+
+// Storing different data about a college student:
+// Student data
+// int studentID = 15;
+// int studentAge = 23;
+// float studentFee = 75.25;
+// char studentGrade = 'B';
+
+// // Print variables
+// cout << "Student ID: " << studentID << "\n";
+// cout << "Student Age: " << studentAge << "\n";
+// cout << "Student Fee: " << studentFee << "\n";
+// cout << "Student Grade: " << studentGrade << "\n";
+
+// // calculate the area of a rectangle
+// // Create integer variables
+// int length = 4;
+// int width = 6;
+
+// // Calculate the area of a rectangle
+// int area = length * width;
+
+// // Print the variables
+// cout << "Length is: " << length << "\n";
+// cout << "Width is: " << width << "\n";
+// cout << "Area of the rectangle is: " << area << "\n";
+//}
+
+// Challenge: Calculate the Area of a Rectangle
+// #include <iostream>
+// using namespace std;
+
+// int main()
+// {
+  // Write length here
+  // int length = 5;
+  // Write width here
+  // int width = 9;
+  // Write area here (length * width)
+  // int area = length * width;
+
+  // Print area here
+  // cout << area;
+  // return 0;
+
+  // Getting user input
+  // string name;
+  // cout << "Enter your name: ";
+  // cin >> name;
+
+  // int age;
+  // cout << "Type your age: ";
+  // cin >> age;
+  // cout << "Your name is " << name << " and your age is: " << age << endl;
+
+  // Float and Double
+  // float f1 = 35e3;
+  // double d1 = 35E3;
+  // cout << f1 << endl;
+  // cout << d1;
+
+  // bool isCodingFun = true;
+// bool isFishTasty = false;
+// cout << isCodingFun << endl; 
+// cout << isFishTasty;  
+// return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+
+// int main() {
+
+//   int studentId = 725;
+//   double score = 99.99;
+//   char grade = 'A';
+
+//   cout << studentId << endl;
+//   cout << score << endl;
+//   cout << grade << endl;
+
+//   return 0;
+// }
+
+// #include <iostream>
+// using namespace std;
+// int main(){
+//   int x = 10;
+// int y = 3;
+
+// cout << (x + y) << "\n"; // 13
+// cout << (x - y) << "\n"; // 7
+// cout << (x * y) << "\n"; // 30
+// cout << (x / y) << "\n"; // 3 (integer division)
+// cout << (x % y) << "\n"; // 1
+
+// int z = 5;
+// ++z;
+// cout << z << "\n"; // 6
+// --z;
+// cout << z << "\n"; // 5
+
+// int x = 5;
+// int y = 3;
+// cout << (x > y); //1 means true
+
+// int result1 = 2 + 3 * 4;    
+// int result2 = (2 + 3) * 4; //use () if you want the addition to happen first
+
+// cout << result1 << "\n";
+// cout << result2 << "\n";
+// }
+
+// String 
+// #include <iostream>
+// using namespace std;
+
+// int main(){
+//   string firstName = "John";
+// string lastName = "Doe";
+// string fullName = firstName + " " + lastName;
+// cout << fullName;
+
+// String methods
+// 1. Append
+// string firstName = "Fatima ";
+// string lastName = "Saif";
+// string fullName = firstName.append(lastName);
+// cout << fullName;
+
+// 2. Length
+// string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+// cout << "The length of the txt string is: " << txt.length(); //size can also be used
+
+// 3. Access 
+// string myString = "Hello";
+// cout << myString[0, 3];
+
+// 4. Change String Characters
+// string myString = "Hello";
+// myString[0] = 'J';
+// cout << myString;
+// Outputs Jello instead of Hello
+
+// at() function
+// string myString = "Hello";
+// cout << myString << endl; // Outputs Hello
+
+// cout << myString.at(0) << endl;  // First character
+// cout << myString.at(1) << endl;  // Second character
+// cout << myString.at(myString.length() - 1) << endl;  // Last character
+
+// myString.at(0) = 'J';
+// cout << myString;  // Outputs Jello
+
+// // inserts a backslach
+// /' insert single commas
+// /" inserts double commas
+
+// getline function
+// string fullName;
+// cout << "Type your full name: ";
+// getline (cin, fullName);
+// cout << "Your name is: " << fullName;
+// }
+
+//Omitting Namespace
+// #include <iostream>
+
+// int main() {
+//   std::string greeting = "Hello";
+//   std::cout << greeting;
+//   return 0;
+// }
+
+// Booleans
 #include <iostream>
 using namespace std;
 
-int main() {
-   cout << "fatima\n";
-   cout << 17;
+int main(){
+//   bool isCodingFun = true;
+// bool isFishTasty = false;
 
-  return 0;
+// cout << isCodingFun << "\n"; 
+// cout << isFishTasty << "\n"; 
+// Output is always 1 and 0, if you want to print true and false, use boolalpha;
+bool isCodingFun = true;
+bool isFishTasty = false;
+
+cout << boolalpha; // enable printing "true"/"false"
+
+cout << isCodingFun << "\n"; 
+cout << isFishTasty << "\n";  
+
+// If you want to go back to the default behavior (printing 1 and 0), you can use noboolalpha:
+
 }

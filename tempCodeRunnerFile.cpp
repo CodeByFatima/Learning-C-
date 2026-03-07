@@ -1,9 +1,5 @@
-#include <iostream>
-// using namespace std;
 
-// int main()
-// {
-//     cout << "Hello World!\t";
-//     cout << "ftm";
-//     return 0;
-// }
+// bool isFishTasty = false;
+
+// cout << isCodingFun << "\n"; 
+// cout << isFishTasty << "\n"; 
