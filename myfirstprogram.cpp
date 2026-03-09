@@ -291,24 +291,103 @@
 // }
 
 // Booleans
-#include <iostream>
-using namespace std;
+// #include <iostream>
+// using namespace std;
 
-int main(){
+// int main(){
 //   bool isCodingFun = true;
 // bool isFishTasty = false;
 
 // cout << isCodingFun << "\n"; 
 // cout << isFishTasty << "\n"; 
 // Output is always 1 and 0, if you want to print true and false, use boolalpha;
-bool isCodingFun = true;
-bool isFishTasty = false;
+// bool isCodingFun = true;
+// bool isFishTasty = false;
 
-cout << boolalpha; // enable printing "true"/"false"
+// cout << boolalpha; // enable printing "true"/"false"
 
-cout << isCodingFun << "\n"; 
-cout << isFishTasty << "\n";  
+// cout << isCodingFun << "\n"; 
+// cout << isFishTasty << "\n";  
 
-// If you want to go back to the default behavior (printing 1 and 0), you can use noboolalpha:
+// If you want to go back to the default behavior (printing 1 and 0), you can use noboolalpha
 
+// }
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+//   int age = 18;
+//  string result = (age >= 18) ? "Adult" : "Kid";
+//  cout << result;
+
+  // Ternary operators are the shorthand for the else if statements
+//   int time = 20;
+// string result = (time < 18) ? "Good day." : "Good evening.";
+// cout << result;
+
+// Nested if statements
+// int age = 20;
+// bool isCitizen = true;
+
+// if (age >= 18) {
+//   cout << "Old enough to vote.\n";
+
+//   if (isCitizen) {
+//     cout << "And you are a citizen, so you can vote!\n";
+//   } else {
+//     cout << "But you must be a citizen to vote.\n";
+//   }
+// } else {
+//   cout << "Not old enough to vote.\n";
+// }
+
+// Switch statements
+// int day = 4;
+// switch (day) {
+//   case 1:
+//     cout << "Monday";
+//     break;
+//   case 2:
+//     cout << "Tuesday";
+//     break;
+//   case 3:
+//     cout << "Wednesday";
+//     break;
+//   case 4:
+//     cout << "Thursday";
+//     break;
+//   case 5:
+//     cout << "Friday";
+//     break;
+//   case 6:
+//     cout << "Saturday";
+//     break;
+//   case 7:
+//     cout << "Sunday";
+//     break;
+// }
+
+//While statements
+// int i = 0;
+// while (i < 5) {
+//   cout << i << "\n";
+//   i++;
+// }
+
+int countdown = 3;
+
+while (countdown > 0) {
+  cout << countdown << "\n";
+  countdown--;
+}
+
+cout << "Eid Mubarak!!! \n";
+
+int number;
+do {
+  cout << "Enter a positive number: ";
+  cin >> number;
+} while (number > 0);
 }
