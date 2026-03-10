@@ -149,37 +149,37 @@
 
 // int main()
 // {
-  // Write length here
-  // int length = 5;
-  // Write width here
-  // int width = 9;
-  // Write area here (length * width)
-  // int area = length * width;
+// Write length here
+// int length = 5;
+// Write width here
+// int width = 9;
+// Write area here (length * width)
+// int area = length * width;
 
-  // Print area here
-  // cout << area;
-  // return 0;
+// Print area here
+// cout << area;
+// return 0;
 
-  // Getting user input
-  // string name;
-  // cout << "Enter your name: ";
-  // cin >> name;
+// Getting user input
+// string name;
+// cout << "Enter your name: ";
+// cin >> name;
 
-  // int age;
-  // cout << "Type your age: ";
-  // cin >> age;
-  // cout << "Your name is " << name << " and your age is: " << age << endl;
+// int age;
+// cout << "Type your age: ";
+// cin >> age;
+// cout << "Your name is " << name << " and your age is: " << age << endl;
 
-  // Float and Double
-  // float f1 = 35e3;
-  // double d1 = 35E3;
-  // cout << f1 << endl;
-  // cout << d1;
+// Float and Double
+// float f1 = 35e3;
+// double d1 = 35E3;
+// cout << f1 << endl;
+// cout << d1;
 
-  // bool isCodingFun = true;
+// bool isCodingFun = true;
 // bool isFishTasty = false;
-// cout << isCodingFun << endl; 
-// cout << isFishTasty;  
+// cout << isCodingFun << endl;
+// cout << isFishTasty;
 // return 0;
 // }
 
@@ -221,14 +221,14 @@
 // int y = 3;
 // cout << (x > y); //1 means true
 
-// int result1 = 2 + 3 * 4;    
+// int result1 = 2 + 3 * 4;
 // int result2 = (2 + 3) * 4; //use () if you want the addition to happen first
 
 // cout << result1 << "\n";
 // cout << result2 << "\n";
 // }
 
-// String 
+// String
 // #include <iostream>
 // using namespace std;
 
@@ -249,7 +249,7 @@
 // string txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 // cout << "The length of the txt string is: " << txt.length(); //size can also be used
 
-// 3. Access 
+// 3. Access
 // string myString = "Hello";
 // cout << myString[0, 3];
 
@@ -281,8 +281,8 @@
 // cout << "Your name is: " << fullName;
 // }
 
-//Omitting Namespace
-// #include <iostream>
+// Omitting Namespace
+//  #include <iostream>
 
 // int main() {
 //   std::string greeting = "Hello";
@@ -298,31 +298,31 @@
 //   bool isCodingFun = true;
 // bool isFishTasty = false;
 
-// cout << isCodingFun << "\n"; 
-// cout << isFishTasty << "\n"; 
+// cout << isCodingFun << "\n";
+// cout << isFishTasty << "\n";
 // Output is always 1 and 0, if you want to print true and false, use boolalpha;
 // bool isCodingFun = true;
 // bool isFishTasty = false;
 
 // cout << boolalpha; // enable printing "true"/"false"
 
-// cout << isCodingFun << "\n"; 
-// cout << isFishTasty << "\n";  
+// cout << isCodingFun << "\n";
+// cout << isFishTasty << "\n";
 
 // If you want to go back to the default behavior (printing 1 and 0), you can use noboolalpha
 
 // }
 
-#include <iostream>
-#include <string>
-using namespace std;
+// #include <iostream>
+// #include <string>
+// using namespace std;
 
-int main(){
+// int main(){
 //   int age = 18;
 //  string result = (age >= 18) ? "Adult" : "Kid";
 //  cout << result;
 
-  // Ternary operators are the shorthand for the else if statements
+// Ternary operators are the shorthand for the else if statements
 //   int time = 20;
 // string result = (time < 18) ? "Good day." : "Good evening.";
 // cout << result;
@@ -369,25 +369,94 @@ int main(){
 //     break;
 // }
 
-//While statements
-// int i = 0;
-// while (i < 5) {
-//   cout << i << "\n";
-//   i++;
+// While statements
+//  int i = 0;
+//  while (i < 5) {
+//    cout << i << "\n";
+//    i++;
+//  }
+
+// int countdown = 3;
+
+// while (countdown > 0) {
+//   cout << countdown << "\n";
+//   countdown--;
 // }
 
-int countdown = 3;
+// cout << "Eid Mubarak!!! \n";
 
-while (countdown > 0) {
-  cout << countdown << "\n";
-  countdown--;
+// int number;
+// do {
+//   cout << "Enter a positive number: ";
+//   cin >> number;
+// } while (number > 0);
+
+// for (int i = 0; i <= 5; i++){
+//   cout << "Fatima" << endl;
+// }
+
+// for (int i = 1; i <= 2; i++) {
+//   for (int j = 1; j <= 3; j++) {
+//     cout << i * j << " ";
+//   }
+// }
+
+// for (int i = 0; i < 10; i++) {
+//   if (i == 4) {
+//     break; //exit loop at 4
+//   }
+//   cout << i << "\n";
+// }
+
+// for (int i = 0; i < 10; i++) {
+//   if (i == 4) {
+//     continue; //skip and move
+//   }
+//   cout << i << "\n";
+// }
+//}
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main()
+{
+  // Array
+  //   string cars[3] = {"BMW", "Porche", "Bentley"};
+
+  //   for (int i = 0; i < 5; i++) {
+  //   cout << cars[i] << "\n";
+  // }
+
+  // Using foreach
+  //  Create an array of integers
+  // int myNumbers[] = {10, 20, 30, 40, 50};
+
+  // // Loop through integers
+  // for (int num : myNumbers)
+  // {
+  //   cout << num << "\n";
+  // }
+
+  // Fixed Size (Arrays) vs. Dynamic Size (Vectors)
+  // A vector with 3 elements
+  // vector<string> cars = {"Volvo", "BMW", "Ford"};
+
+  // // Adding another element to the vector
+  // cars.push_back("Tesla");
+
+  // int myNumbers[5] = {10, 20, 30, 40, 50};
+  // cout << sizeof(myNumbers); // return 20 as its in bytes
+
+  // To find out how many elements an array has, you have to divide the size of the array by the size of the first element in the array:
+  int myNumbers[5] = {10, 20, 30, 40, 50};
+  int getArrayLength = sizeof(myNumbers) / sizeof(myNumbers[0]);
+  cout << getArrayLength;
+
+  // looping thru an array
+  int myNumbers[5] = {10, 20, 30, 40, 50};
+for (int i = 0; i < sizeof(myNumbers) / sizeof(myNumbers[0]); i++) {
+  cout << myNumbers[i] << "\n";
 }
-
-cout << "Eid Mubarak!!! \n";
-
-int number;
-do {
-  cout << "Enter a positive number: ";
-  cin >> number;
-} while (number > 0);
 }
