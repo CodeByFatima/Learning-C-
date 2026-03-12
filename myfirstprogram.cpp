@@ -416,12 +416,12 @@
 // }
 //}
 
-#include <iostream>
-#include <vector>
-using namespace std;
+// #include <iostream>
+// #include <vector>
+// using namespace std;
 
-int main()
-{
+// int main()
+// {
   // Array
   //   string cars[3] = {"BMW", "Porche", "Bentley"};
 
@@ -450,13 +450,132 @@ int main()
   // cout << sizeof(myNumbers); // return 20 as its in bytes
 
   // To find out how many elements an array has, you have to divide the size of the array by the size of the first element in the array:
-  int myNumbers[5] = {10, 20, 30, 40, 50};
-  int getArrayLength = sizeof(myNumbers) / sizeof(myNumbers[0]);
-  cout << getArrayLength;
+  // int myNumbers[5] = {10, 20, 30, 40, 50};
+  // int getArrayLength = sizeof(myNumbers) / sizeof(myNumbers[0]);
+  // cout << getArrayLength;
 
-  // looping thru an array
-  int myNumbers[5] = {10, 20, 30, 40, 50};
-for (int i = 0; i < sizeof(myNumbers) / sizeof(myNumbers[0]); i++) {
-  cout << myNumbers[i] << "\n";
-}
+  //   // looping thru an array
+  //   int myNumbers[5] = {10, 20, 30, 40, 50};
+  // for (int i = 0; i < sizeof(myNumbers) / sizeof(myNumbers[0]); i++) {
+  //   cout << myNumbers[i] << "\n";
+  //}
+
+  // Structures
+  // // Create a structure variable called myStructure
+  // struct {
+  //   int myNum;
+  //   string myString;
+  // } myStructure;
+
+  // // Assign values to members of myStructure
+  // myStructure.myNum = 1;
+  // myStructure.myString = "Hello World!";
+
+  // // Print members of myStructure
+  // cout << myStructure.myNum << "\n";
+  // cout << myStructure.myString << "\n";
+
+  // One Structure in Multiple Variables
+  // Declare a structure named "car"
+  // struct car {
+  //   string brand;
+  //   string model;
+  //   int year;
+  // };
+
+  // int main() {
+  //   // Create a car structure and store it in myCar1;
+  //   car myCar1;
+  //   myCar1.brand = "BMW";
+  //   myCar1.model = "X5";
+  //   myCar1.year = 1999;
+
+  //   // Create another car structure and store it in myCar2;
+  //   car myCar2;
+  //   myCar2.brand = "Ford";
+  //   myCar2.model = "Mustang";
+  //   myCar2.year = 1969;
+
+  //   // Print the structure members
+  //   cout << myCar1.brand << " " << myCar1.model << " " << myCar1.year << "\n";
+  //   cout << myCar2.brand << " " << myCar2.model << " " << myCar2.year << "\n";
+
+  //   return 0;
+  // }
+
+  // Challenge
+  // struct student
+  // {
+  //   string name;
+  //   int age;
+  //   char grade;
+  // };
+
+  // student student1;
+
+  // student1.name = "Fatima";
+  // student1.age = 17;
+  // student1.grade = 'A';
+
+  // cout << "Her name is " << student1.name
+  //      << " She is " << student1.age
+  //      << " and took a grade " << student1.grade;
+
+  // return 0;
+
+  // An enum is a special type that represents a group of constants
+//}
+
+//Pointers
+// A pointer is a variable that stores the memory address of another variable.
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    // int var = 10;
+
+    // // declare pointer and store address of x
+    // int *ptr = &var;
+
+    // // print value and address
+    // cout << "Value of x: " << var << endl;
+    // cout << "Address of x: " << &var << endl;
+    // cout << "Value stored in pointer ptr: " << ptr << endl;
+    // cout << "Value pointed to by ptr: " << *ptr << endl;
+
+    // return 0;
+
+//     string food = "Pizza";
+// string* ptr = &food;
+
+// // Output the value of food (Pizza)
+// cout << food << "\n";
+
+// // Output the memory address of food (0x6dfed4)
+// cout << &food << "\n";
+
+// // Access the memory address of food and output its value (Pizza)
+// cout << *ptr << "\n";
+
+// // Change the value of the pointer
+// *ptr = "Hamburger";
+
+// // Output the new value of the pointer (Hamburger)
+// cout << *ptr << "\n";
+
+// // Output the new value of the food variable (Hamburger)
+// cout << food << "\n";
+
+// C++ new and delete
+int* ptr = new int;
+// new int creates memory space for one integer, ptr stores the address of that space
+*ptr = 35;
+// *ptr = 35; stores the number 35
+cout << *ptr;
+// cout << *ptr; prints the value
+
+// The delete Keyword
+delete ptr;
+
 }
